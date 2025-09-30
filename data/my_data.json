@@ -1,0 +1,74 @@
+{
+  "personal": {
+    "name": "Lin Myat Phyo"
+  },
+  "education": {
+    "university": "Assumption University of Thailand",
+    "years": "2022-2026",
+    "degree": "BSc IT (Software Engineering and Development concentration)",
+    "gpa": "3.63"
+  },
+  "coursework": [
+    "Web Application Development",
+    "Backend Application Development",
+    "Data Structures and Algorithms",
+    "UI/UX and Prototyping",
+    "Cloud Computing"
+  ],
+  "projects": [
+    {
+      "name": "Collavo - Student Centered Project Management Platform",
+      "type": "Senior Project 1",
+      "github": "[github link]",
+      "deployment": "[deployment link]"
+    },
+    {
+      "name": "Helio Ring",
+      "description": "Ecommerce website frontend design project",
+      "github": "[github link]",
+      "deployment": "[deployment link]"
+    }
+  ],
+  "contacts": {
+    "linkedin": "[linkedin]",
+    "gmail": "[gmail]"
+  },
+  "socials": {
+    "instagram": "[instagram]"
+  },
+  "skills": {
+    "languages": [
+      "Python",
+      "Java",
+      "JavaScript",
+      "TypeScript",
+      "SQL"
+    ],
+    "frontend": [
+      "React",
+      "Next.js"
+    ],
+    "backend": [
+      "Node.js",
+      "PostgreSQL"
+    ],
+    "databases": [
+      "PostgreSQL",
+      "NeonDB",
+      "Supabase"
+    ],
+    "cloud": [
+      "AWS",
+      "Azure",
+      "Docker"
+    ],
+    "tools": [
+      "Git",
+      "Figma"
+    ],
+    "methodologies": [
+      "Agile",
+      "Scrum"
+    ]
+  }
+}
