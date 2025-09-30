@@ -17,7 +17,7 @@ export default function Projects({ projects }) {
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 md:items-stretch">
           {projects.map((project) => (
             <ProjectCard key={project.name} project={project} />
           ))}

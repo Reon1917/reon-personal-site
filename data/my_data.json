@@ -19,12 +19,25 @@
     {
       "name": "Collavo - Student Centered Project Management Platform",
       "type": "Senior Project 1",
+      "description": "Simple-to-use project management platform helping student teams stay in sync.",
+      "highlights": [
+        "Collaborated with a three-person team throughout the semester to ship the MVP",
+        "Captured feedback from professors, peers, and testers to iterate on workflows",
+        "Focused on approachable task views so planning feels natural for non-technical teammates"
+      ],
+      "techStack": ["Next.js", "TypeScript", "NeonDB", "Supabase", "Resend"],
       "github": "https://github.com/Reon1917/Collavo",
       "deployment": "https://collavo-alpha.vercel.app"
     },
     {
       "name": "Helio Ring",
-      "description": "Ecommerce website frontend design project",
+      "description": "Ecommerce concept that walks shoppers from discovery to checkout simulation.",
+      "highlights": [
+        "Mapped the journey from landing page to product comparison and cart handoff",
+        "Composed reusable UI pieces with shadcn/ui for fast iteration",
+        "Balanced modern visuals with accessible interactions for responsive layouts"
+      ],
+      "techStack": ["Next.js", "React", "shadcn/ui"],
       "github": "https://github.com/Reon1917/ecommerence-mockup",
       "deployment": "https://ecommerence-mockup.vercel.app"
     }

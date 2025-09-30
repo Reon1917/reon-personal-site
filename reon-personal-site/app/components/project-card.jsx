@@ -3,23 +3,27 @@ import { PrimaryButton, SecondaryButton } from "./buttons";
 const isPlaceholder = (value) => !value || value.includes("[");
 
 const defaultHighlights = [
-  "Scoped the feature roadmap with classmates and mentors",
-  "Iterated quickly using design feedback sessions",
-  "Ship-ready code reviews with attention to accessibility",
+  "Collaborated closely with teammates to scope, build, and polish the experience",
+  "Iterated fast using recorded feedback sessions and lightweight usability tests",
+  "Kept quality high with clear documentation, accessibility checks, and code reviews",
 ];
+
+const defaultDescription =
+  "Exploring practical ways to make the experience friendly while keeping the engineering pragmatic.";
 
 export default function ProjectCard({ project }) {
   if (!project) {
     return null;
   }
 
-  const { name, type, description, github, deployment, highlights } = project;
+  const { name, type, description, github, deployment, highlights, techStack } = project;
   const hasGithub = !isPlaceholder(github);
   const hasDeployment = !isPlaceholder(deployment);
   const highlightList = Array.isArray(highlights) && highlights.length > 0 ? highlights : defaultHighlights;
+  const stackList = Array.isArray(techStack) && techStack.length > 0 ? techStack : [];
 
   return (
-    <article className="card-surface group relative grid min-h-[240px] grid-rows-[auto_1fr_auto] gap-6 overflow-hidden p-6 transition duration-200 hover:-translate-y-1 hover:shadow-2xl/80">
+    <article className="card-surface flex h-full flex-col gap-6 p-7 lg:p-8">
       <header className="flex flex-col gap-3">
         <div className="flex items-center justify-between gap-3">
           <h3 className="text-lg font-semibold tracking-tight text-[color:var(--foreground)]">
@@ -32,11 +36,24 @@ export default function ProjectCard({ project }) {
           ) : null}
         </div>
         <p className="text-sm leading-6 text-[color:var(--muted-foreground)]">
-          {description ?? "Making the project feel delightful while keeping the engineering practical."}
+          {description ?? defaultDescription}
         </p>
       </header>
 
-      <ul className="grid gap-2 text-sm text-[color:var(--muted-foreground)]">
+      {stackList.length ? (
+        <div className="flex flex-wrap gap-2">
+          {stackList.map((item) => (
+            <span
+              key={item}
+              className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)]/70 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-[color:var(--muted-foreground)]"
+            >
+              {item}
+            </span>
+          ))}
+        </div>
+      ) : null}
+
+      <ul className="flex flex-col gap-2 text-sm leading-6 text-[color:var(--muted-foreground)]">
         {highlightList.map((item) => (
           <li key={item} className="relative pl-5">
             <span className="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-[color:var(--primary)] opacity-70" />
@@ -45,7 +62,7 @@ export default function ProjectCard({ project }) {
         ))}
       </ul>
 
-      <footer className="flex flex-wrap gap-3">
+      <footer className="mt-auto flex flex-wrap gap-3">
         {hasDeployment ? (
           <PrimaryButton href={deployment} target="_blank" rel="noreferrer" className="px-5">
             Live demo &gt;
