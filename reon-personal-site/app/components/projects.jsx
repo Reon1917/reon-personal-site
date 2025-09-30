@@ -9,10 +9,11 @@ export default function Projects({ projects }) {
     <section className="section">
       <div className="container flex flex-col gap-10">
         <div className="section-heading">
-          <h2>Recent work</h2>
+          <h2>Recent tinkering</h2>
           <p>
-            Each project sharpened how I align technical execution with stakeholder goals. I lean on
-            rapid iteration, tight feedback loops, and clear documentation to keep momentum high.
+            I gravitate toward projects that put collaboration, clear UX, and real users at the
+            center. Here are a few builds that taught me how to mix design thinking with solid
+            engineering.
           </p>
         </div>
 

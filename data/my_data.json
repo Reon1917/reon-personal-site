@@ -19,22 +19,22 @@
     {
       "name": "Collavo - Student Centered Project Management Platform",
       "type": "Senior Project 1",
-      "github": "[github link]",
-      "deployment": "[deployment link]"
+      "github": "https://github.com/Reon1917/Collavo",
+      "deployment": "https://collavo-alpha.vercel.app"
     },
     {
       "name": "Helio Ring",
       "description": "Ecommerce website frontend design project",
-      "github": "[github link]",
-      "deployment": "[deployment link]"
+      "github": "https://github.com/Reon1917/ecommerence-mockup",
+      "deployment": "https://ecommerence-mockup.vercel.app"
     }
   ],
   "contacts": {
-    "linkedin": "[linkedin]",
-    "gmail": "[gmail]"
+    "linkedin": "https://www.linkedin.com/in/lin-myat-phyo-b872b1217",
+    "gmail": "linmyatphyo03@gmail.com"
   },
   "socials": {
-    "instagram": "[instagram]"
+    "instagram": "https://www.instagram.com/re0n1917"
   },
   "skills": {
     "languages": [
@@ -46,7 +46,8 @@
     ],
     "frontend": [
       "React",
-      "Next.js"
+      "Next.js",
+      "Next.js API Routes"
     ],
     "backend": [
       "Node.js",
@@ -55,7 +56,8 @@
     "databases": [
       "PostgreSQL",
       "NeonDB",
-      "Supabase"
+      "Supabase",
+      "MongoDB"
     ],
     "cloud": [
       "AWS",
@@ -64,11 +66,16 @@
     ],
     "tools": [
       "Git",
-      "Figma"
+      "Figma",
+      "Unity"
     ],
     "methodologies": [
       "Agile",
       "Scrum"
+    ],
+    "architecture": [
+      "Microservices",
+      "System Design"
     ]
   }
 }

@@ -11,6 +11,7 @@ const PREFERRED_ORDER = [
   "backend",
   "databases",
   "cloud",
+  "architecture",
   "tools",
   "methodologies",
 ];
@@ -38,37 +39,34 @@ export default function Skills({ skills }) {
   return (
     <section className="section">
       <div className="container flex flex-col gap-10">
-        <div className="section-heading">
-          <h2>Technical range</h2>
-          <p>
-            I move quickly between discovery and delivery by pairing production-ready tooling with the
-            fundamentals needed to build durable systems.
-          </p>
-        </div>
+        <div className="grid gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-start">
+          <div className="section-heading">
+            <h2>Toolbox & team-ups</h2>
+            <p>
+              These are the languages, stacks, and collaboration habits I reach for when building web
+              products that have to scale from MVP to something teammates can rely on.
+            </p>
+          </div>
 
-        <div className="grid gap-6 md:grid-cols-2">
-          {categories.map(([category, list]) => (
-            <article key={category} className="card-muted flex flex-col gap-4 p-6">
-              <header className="flex items-center justify-between">
-                <h3 className="text-base font-semibold tracking-tight">
+          <div className="grid gap-6 sm:grid-cols-2">
+            {categories.map(([category, list]) => (
+              <div key={category} className="flex flex-col gap-3">
+                <h3 className="text-xs font-semibold uppercase tracking-[0.28em] text-[color:var(--muted-foreground)]">
                   {labelize(category)}
                 </h3>
-                <span className="text-xs uppercase tracking-[0.24em] text-[color:var(--muted-foreground)]">
-                  {list.length} skills
-                </span>
-              </header>
-              <ul className="flex flex-wrap gap-2">
-                {list.map((item) => (
-                  <li
-                    key={item}
-                    className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)]/70 px-3 py-1 text-sm text-[color:var(--muted-foreground)]"
-                  >
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </article>
-          ))}
+                <ul className="flex flex-wrap gap-2">
+                  {list.map((item) => (
+                    <li
+                      key={item}
+                      className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)]/60 px-3 py-1 text-sm text-[color:var(--muted-foreground)] shadow-sm shadow-black/5 backdrop-blur"
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
