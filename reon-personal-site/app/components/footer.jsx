@@ -5,7 +5,7 @@ export default function Footer({ name }) {
     <footer className="pb-10">
       <div className="container flex flex-wrap items-center justify-between gap-4 border-t border-[color:var(--border)] pt-6 text-sm text-[color:var(--muted-foreground)]">
         <span>
-          Copyright {year} {name ?? "Lin Myat Phyo"}. Made with care, coffee, and a few AI assists.
+          © {year} {name ?? "Lin Myat Phyo"}. Built with care.
         </span>
         <span className="text-xs uppercase tracking-[0.24em]">Always learning</span>
       </div>

@@ -18,16 +18,16 @@ export default function Contacts({ contacts, socials }) {
       <div className="container">
         <div className="card-surface flex flex-col gap-6 p-8 md:flex-row md:items-center md:justify-between">
           <div className="max-w-xl space-y-3">
-            <h2 className="text-2xl font-semibold tracking-tight">Let&apos;s team up</h2>
+            <h2 className="text-2xl font-semibold tracking-tight">Let&apos;s connect</h2>
             <p className="text-sm leading-6 text-[color:var(--muted-foreground)]">
-              I&apos;m always up for talking internships, hackathons, or your next product idea. Send me a
-              note and we can jam on timelines, prototypes, or the best noodles in town.
+              Open to internships, hackathons, and product collaborations. Send a note and we can talk
+              timelines, prototypes, or how I can help.
             </p>
           </div>
 
           <div className="flex flex-wrap items-center gap-4">
             <PrimaryButton href={emailHref} className={emailHref === "#" ? "pointer-events-none opacity-60" : ""}>
-              Email Lin
+              Email
             </PrimaryButton>
             <SecondaryButton
               href={linkedinHref}
@@ -35,7 +35,7 @@ export default function Contacts({ contacts, socials }) {
               rel={linkedinHref !== "#" ? "noreferrer" : undefined}
               className={linkedinHref === "#" ? "pointer-events-none opacity-60" : ""}
             >
-              LinkedIn DMs
+              LinkedIn
             </SecondaryButton>
             {instagramHref !== "#" ? (
               <a

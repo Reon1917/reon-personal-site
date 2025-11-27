@@ -41,11 +41,8 @@ export default function Skills({ skills }) {
       <div className="container flex flex-col gap-10">
         <div className="grid gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-start">
           <div className="section-heading">
-            <h2>Toolbox & team-ups</h2>
-            <p>
-              These are the languages, stacks, and collaboration habits I reach for when building web
-              products that have to scale from MVP to something teammates can rely on.
-            </p>
+            <h2>Skills snapshot</h2>
+            <p>Core tools and practices I use to move web products from MVP to production-ready.</p>
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2">

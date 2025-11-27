@@ -29,18 +29,17 @@ export default function Hero({ personal, education, coursework, contacts }) {
                 Software engineering student
               </span>
               <h1 className="text-pretty text-4xl font-semibold leading-tight tracking-[-0.04em] sm:text-5xl">
-                Shipping friendly web apps with a curious mind and AI sidekick
+                Building reliable web apps with a clear, thoughtful approach
               </h1>
               <p className="max-w-2xl text-base leading-7 text-[color:var(--muted-foreground)] sm:text-lg sm:leading-8">
-                Hey there! I build web experiences that feel welcoming and purposeful. I lean on
-                modern stacks, sprinkle in AI coding tools when they help, and keep learning fast by
-                pairing with teammates, mentors, and users.
+                I build web products that stay straightforward to use. I ship with modern stacks, use AI
+                tools when they speed things up, and learn quickly from teammates and users.
               </p>
             </div>
 
             <div className="flex flex-wrap items-center gap-3 sm:gap-4">
               <PrimaryButton href={emailHref} className={emailHref === "#" ? "pointer-events-none opacity-60" : ""}>
-                Say hello
+                Email me
               </PrimaryButton>
               <SecondaryButton
                 href={linkedinHref}
@@ -54,18 +53,18 @@ export default function Hero({ personal, education, coursework, contacts }) {
 
             {education ? (
               <p className="text-sm leading-6 text-[color:var(--muted-foreground)] sm:max-w-lg">
-                Studying {education.degree} at {education.university} ({education.years}) and keeping a
-                {education.gpa} GPA while experimenting with product ideas outside the classroom.
+                Studying {education.degree} at {education.university} ({education.years}) with a
+                {education.gpa} GPA and prototyping product ideas outside class.
               </p>
             ) : null}
           </div>
 
           <aside className="card-surface flex flex-col gap-5 p-6">
             <div className="flex flex-col gap-2">
-              <h2 className="text-lg font-semibold tracking-tight">Classes fueling my work</h2>
+              <h2 className="text-lg font-semibold tracking-tight">Coursework</h2>
               <p className="text-sm leading-6 text-[color:var(--muted-foreground)]">
-                Coursework gives me the theory, side projects supply the reps. Together they help me
-                spot the right trade-offs when building in the wild.
+                Recent courses that shape how I design and build. They help me make sensible trade-offs
+                when shipping projects.
               </p>
             </div>
             <ul className="flex flex-wrap gap-2">

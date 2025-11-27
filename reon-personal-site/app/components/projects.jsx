@@ -9,12 +9,8 @@ export default function Projects({ projects }) {
     <section className="section">
       <div className="container flex flex-col gap-10">
         <div className="section-heading">
-          <h2>Recent tinkering</h2>
-          <p>
-            I gravitate toward projects that put collaboration, clear UX, and real users at the
-            center. Here are a few builds that taught me how to mix design thinking with solid
-            engineering.
-          </p>
+          <h2>Selected projects</h2>
+          <p>Work focused on collaboration and clear UX, pairing design decisions with dependable engineering.</p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 md:items-stretch">

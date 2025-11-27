@@ -3,13 +3,13 @@ import { PrimaryButton, SecondaryButton } from "./buttons";
 const isPlaceholder = (value) => !value || value.includes("[");
 
 const defaultHighlights = [
-  "Collaborated closely with teammates to scope, build, and polish the experience",
-  "Iterated fast using recorded feedback sessions and lightweight usability tests",
-  "Kept quality high with clear documentation, accessibility checks, and code reviews",
+  "Worked with teammates to define scope and deliver the release",
+  "Iterated with feedback sessions and quick usability checks",
+  "Documented decisions and accessibility notes to keep quality consistent",
 ];
 
 const defaultDescription =
-  "Exploring practical ways to make the experience friendly while keeping the engineering pragmatic.";
+  "Building a clear experience backed by pragmatic engineering choices.";
 
 export default function ProjectCard({ project }) {
   if (!project) {
@@ -30,7 +30,7 @@ export default function ProjectCard({ project }) {
             {name}
           </h3>
           {type ? (
-            <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)]/70 px-3 py-1 text-xs uppercase tracking-[0.24em] text-[color:var(--muted-foreground)]">
+            <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)]/70 px-3.5 py-1.5 text-[10px] uppercase tracking-[0.16em] text-[color:var(--muted-foreground)]">
               {type}
             </span>
           ) : null}
@@ -65,12 +65,12 @@ export default function ProjectCard({ project }) {
       <footer className="mt-auto flex flex-wrap gap-3">
         {hasDeployment ? (
           <PrimaryButton href={deployment} target="_blank" rel="noreferrer" className="px-5">
-            Live demo &gt;
+            Live demo
           </PrimaryButton>
         ) : null}
         {hasGithub ? (
           <SecondaryButton href={github} target="_blank" rel="noreferrer" className="px-5">
-            GitHub repo
+            GitHub
           </SecondaryButton>
         ) : null}
         {!hasGithub && !hasDeployment ? (

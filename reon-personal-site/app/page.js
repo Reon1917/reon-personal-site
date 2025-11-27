@@ -2,7 +2,6 @@ import Hero from "./components/hero";
 import Skills from "./components/skills";
 import Projects from "./components/projects";
 import Contacts from "./components/contacts";
-import Footer from "./components/footer";
 import { getPortfolioData } from "../lib/getPortfolioData";
 
 export default async function Home() {
@@ -29,7 +28,6 @@ export default async function Home() {
       <Skills skills={skills} />
       <Projects projects={projects} />
       <Contacts contacts={contacts} socials={socials} />
-      <Footer name={personal?.name} />
     </main>
   );
 }
