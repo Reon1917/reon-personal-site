@@ -20,6 +20,19 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Deployment (VPS)
+
+This app is intended to run behind a single VPS-level reverse proxy (Nginx) that terminates TLS and routes by domain/subdomain.
+
+- `docker-compose.yml` publishes the app only on loopback: `127.0.0.1:3000` (not public to the internet)
+- Nginx should proxy `reondev.com` / `www.reondev.com` to `http://127.0.0.1:3000`
+
+On the VPS:
+
+```bash
+docker compose up -d --build
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
