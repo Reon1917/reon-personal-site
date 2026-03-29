@@ -12,19 +12,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Lin Myat Phyo | Software Engineer",
+  title: "Lin Myat Phyo",
   description:
-    "Portfolio and project highlights for Lin Myat Phyo, a software engineering student focused on web platforms and product-driven delivery.",
+    "Full-stack web developer and business analyst based in Thailand. Work experience, projects, and education.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme="light" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[color:var(--background)] text-[color:var(--foreground)]`}
-      >
-        {children}
-      </body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
     </html>
   );
 }

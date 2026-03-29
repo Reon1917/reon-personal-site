@@ -1,94 +1,74 @@
 {
   "personal": {
-    "name": "Lin Myat Phyo"
+    "name": "Lin Myat Phyo",
+    "title": "Full-Stack Web Developer / Business Analyst",
+    "location": "Thailand"
   },
-  "education": {
-    "university": "Assumption University of Thailand",
-    "years": "2022-2026",
-    "degree": "BSc IT (Software Engineering and Development concentration)",
-    "gpa": "3.63"
-  },
-  "coursework": [
-    "Web Application Development",
-    "Backend Application Development",
-    "Data Structures and Algorithms",
-    "UI/UX and Prototyping",
-    "Cloud Computing"
+  "experience": [
+    {
+      "role": "Business Analyst Intern",
+      "company": "NNPC AI",
+      "period": "Dec 2025 – May 2026",
+      "bullets": [
+        "Researched Local LLM deployment, prototyped N8N workflows .",
+        "Shipped internal expense reimbursement Micro-SaaS: Next.js, Supabase, Vercel, RBAC, approvals, PDF export."
+      ]
+    }
   ],
   "projects": [
     {
-      "name": "Collavo - Student Centered Project Management Platform",
-      "type": "Senior Project 1",
-      "description": "Project management platform for student teams to coordinate work.",
-      "highlights": [
-        "Worked with a three-person team over the semester to ship the MVP",
-        "Gathered feedback from professors, peers, and testers to refine workflows",
-        "Designed task views that stay clear for non-technical teammates"
-      ],
-      "techStack": ["Next.js", "TypeScript", "NeonDB", "Supabase", "Resend"],
-      "github": "https://github.com/Reon1917/Collavo",
-      "deployment": "https://collavo-alpha.vercel.app"
+      "name": "Feel ABAC Online Ordering System ( Senior Project 2 )",
+      "github": "https://github.com/Reon1917/feel-abac-online-order",
+      "deployment": "https://feelabac.com/"
     },
     {
-      "name": "Helio Ring",
-      "description": "Ecommerce concept guiding shoppers from discovery through checkout simulation.",
-      "highlights": [
-        "Mapped the journey from landing page through product comparison and cart handoff",
-        "Built reusable UI pieces with shadcn/ui for faster iteration",
-        "Balanced modern visuals with accessible, responsive interactions"
-      ],
-      "techStack": ["Next.js", "React", "shadcn/ui"],
-      "github": "https://github.com/Reon1917/ecommerence-mockup",
-      "deployment": "https://ecommerence-mockup.vercel.app"
+      "name": "Collavo ( Senior Project 1 )",
+      "github": "https://github.com/Reon1917/Collavo (Senior Project 1)",
+      "deployment": "https://collavo-alpha.vercel.app"
     }
+  ],
+  "skills": [
+    {
+      "category": "Languages",
+      "items": ["TypeScript", "JavaScript", "Python", "Java", "SQL"]
+    },
+    {
+      "category": "Cloud & Infrastructure",
+      "items": ["AWS", "GCP", "Azure", "Docker", "Terraform", "DigitalOcean"]
+    },
+    {
+      "category": "Databases",
+      "items": ["PostgreSQL", "MongoDB", "Supabase", "Firebase"]
+    },
+    {
+      "category": "Tools & Practices",
+      "items": ["Git", "REST APIs", "CI/CD", "TDD", "CRUD"]
+    },
+    {
+      "category": "Other Skills",
+      "items": ["Data Analytics", "Data Visualization", "Excel", "UI/UX"]
+    }
+  ],
+  "education": {
+    "university": "Assumption University of Thailand",
+    "period": "Nov 2022 – Apr 2026",
+    "degree": "B.Sc. Information Technology",
+    "gpa": "3.64"
+  },
+  "coursework": [
+    "Data Structures & Algorithms",
+    "Web Application Development",
+    "Backend Application Development",
+    "Machine Learning",
+    "Cloud Computing",
+    "Requirement Engineering",
+    "Information Systems Analysis & Design",
+    "IT Project Management",
+    "AI for Business",
+    "Digital Marketing"
   ],
   "contacts": {
     "linkedin": "https://www.linkedin.com/in/lin-myat-phyo-b872b1217",
     "gmail": "linmyatphyo03@gmail.com"
-  },
-  "socials": {
-    "instagram": "https://www.instagram.com/re0n1917"
-  },
-  "skills": {
-    "languages": [
-      "Python",
-      "Java",
-      "JavaScript",
-      "TypeScript",
-      "SQL"
-    ],
-    "frontend": [
-      "React",
-      "Next.js"
-    ],
-    "backend": [
-      "Node.js",
-      "Next.js API Routes"
-    ],
-    "databases": [
-      "PostgreSQL",
-      "NeonDB",
-      "Supabase",
-      "MongoDB"
-    ],
-    "cloud": [
-      "AWS",
-      "Azure",
-      "GCP"
-    ],
-    "tools": [
-      "Git",
-      "Docker",
-      "Figma",
-      "Unity"
-    ],
-    "methodologies": [
-      "Agile",
-      "Scrum"
-    ],
-    "architecture": [
-      "Microservices",
-      "System Design"
-    ]
   }
 }
